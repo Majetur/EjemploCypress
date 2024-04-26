@@ -19,8 +19,8 @@ import './commands'
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 
+// Esto se pone en este proyecto en concreto porque la 
+// web de la EAP lanza una excepcion no controlada en la carga
 Cypress.on('uncaught:exception', (err, runnable) => {
-    // returning false here prevents Cypress from
-    // failing the test
     return false
   })

@@ -5,5 +5,8 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
+    experimentalRunAllSpecs: true
   },
+  viewportWidth: 1920,
+  viewportHeight: 1024
 });
